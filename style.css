@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(257, 40%,49%)url('images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    color: #fff;
+    z-index: -1;
+    margin: 2em;
+    
+}
+
+
+
+header > img{
+    width: 43%;
+    margin-bottom: .5em;
+    
+}
+
+.banner-img{
+    margin-top: 2.7em;
+}
+
+.banner-img > img{
+    width: 99%;
+    height: auto;
+    animation-name: banner-img;
+    animation-duration: 4s;
+    
+}
+
+@keyframes banner-img{
+    from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+main > h2{
+    width:100%;
+    margin-top: 1.8em;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400,600;
+    animation-name: banner-img;
+    animation-duration: 6s;
+
+    
+}
+
+main > p{
+    text-align:center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1.3em;
+    animation-name: banner-img;
+    animation-duration: 6s;
+
+
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.3em;
+}
+
+.btn > button{
+    background-color: #fff;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 35px;
+    color: hsl(257, 40%,49%);
+    align-items: center;
+    padding: .7em 5em;
+    box-shadow: 0 4px 7px rgb(86, 65, 139);
+    animation-name: banner-img;
+    animation-duration: 6s;
+    transition: background-color 300ms ease-in-out,color 300ms ease-in-out;
+
+    
+}
+
+.btn > button:hover{
+    background-color:rgb(211, 95, 211);
+    color: #fff;
+}
+
+.btn > button:active{
+    background-color: rgb(211, 95, 211);
+    color: #fff;
+}
+
+
+
+footer p{
+    align-items: center;
+    animation-name: banner-img;
+    animation-duration: 6s;
+    margin-top: 1em;
+}
+
+footer > p a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+}
+
+.social-links > i{
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    padding: .5em;
+    margin-right: .7em;
+    border-radius: 50%;
+    animation-name: banner-img;
+    animation-duration: 6s;
+}
+
+.social-links > i:hover{
+    border: 1px solid rgb(211, 95, 211);
+    color: rgb(211, 95, 211);
+    
+}
+
+.social-links > i:active{
+    border: 1px solid rgb(211, 95, 211);
+    color: rgb(211, 95, 211);
+    
+}
+
+
+/*Media Quary*/
+
+
+/*For Tablet*/
+@media(min-width:768px){
+
+    header > img{
+        width: 30%;
+    }
+
+
+    .banner-img > img{
+        width: 100%;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+    }
+
+    main > h2{
+        font-size: 1.7em;
+        margin-left: 1em;
+    }
+
+    main > p{
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .btn{
+        margin-top:-2em ;
+        margin-left: 11em;
+    }
+
+    .btn >button{
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    footer > p{
+        margin-top:3em;
+        text-align: center;
+    }
+
+    .social-links{
+        justify-content: right;
+        margin-top: 10em;
+    }
+}
+
+
+/*For Laptop and Desktop*/
+@media (min-width:1024px), (min-width:1200px) and (max-width:1440px){
+    
+    body{
+        background-image: url('images/bg-desktop.svg');
+        background-repeat: no-repeat;
+    }
+    
+    header > img{
+        width: 20%;
+        margin-bottom: .5em;
+        
+    }
+    .banner-img > img{
+        width: 95%;
+        height: auto;
+        
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5px;
+    }
+
+    main > h2{
+        margin-left: 0em;
+        margin-top: 3em;
+        width: 47%;
+        text-align: left;
+    }
+
+    main > p{
+        position: absolute;
+        left: 50%;
+        width:34%;
+        text-align: left;
+    }
+
+    .btn{
+        margin-top: -13em;
+        margin-left: 11em;
+    }
+
+    .btn > button{
+        padding: .9em 4.3em;
+    }
+
+    footer > p{
+        margin-top: 17em;
+    }
+
+    .social-links{
+        justify-content: right;
+    }
+    
+}
+
